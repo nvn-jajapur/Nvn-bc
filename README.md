@@ -1,5 +1,10 @@
 ## Welcome to AutoMobile MarketPlace
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The AutoMobile marketplace, powered by Ethereum, revolutionizes vehicle buying and selling. Leveraging blockchain technology, it ensures secure, transparent transactions and offers smart contracts for seamless, trustless exchanges. Dive into a futuristic automotive experience where every deal is as reliable as the technology behind it!
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`my-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/1be94daa-0ac2-4182-926c-cb92af6b0c40)
+
 
 ## Getting Started
 
