@@ -5,11 +5,36 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`my-app`](ht
 
 ![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/1be94daa-0ac2-4182-926c-cb92af6b0c40)
 
+Link for the application :
 
-## Getting Started
+Technologies uses:
 
-First, run the development server:
+## Technologies
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [MetaMask](https://metamask.io/) - Metamask Wallet
+- [Solidity](https://soliditylang.org/) - Solidity
+- [Remix](https://remix.ethereum.org/) - Remix IDE
+- [EtherScan](https://etherscan.io/) - Etherscan to check transactions
+
+Before we start, make sure Node is installed on your system.
+## Commands to clone the project
+```bash
+git clone https://github.com/nvn-jajapur/Nvn-bc.git
+```
+### Commands to install required packages
+```bash
+npm install
+# or npm install --force (not recommended)
+npm install ethers
+# or npm install ethers  --force (not recommended)
+npm install axios
+# or npm install axios  --force (not recommended)
+```
+## Code in solidity
+Make sure that you hvae connected to MetaMask(or other wallet) and solidity is coding is up and running
+
+## Commands to run project
 ```bash
 npm run dev
 # or
@@ -20,7 +45,6 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
