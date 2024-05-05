@@ -14,11 +14,12 @@ const WalletCard = () => {
     const [connButtonText, setConnButtonText] = useState('Connect Wallet');
     const [enableButtons, setEnableButtons] = useState(false);
 
+    // Function to check the connection of Wallet
     const connectWalletHandler = async () => {
         if (window.ethereum && window.ethereum.isMetaMask) {
             try {
                 const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
-                setDefaultAccount(accounts[0]);
+                setDefaultAccount(accounts[0]); // Accessing the first account from the wallet if there are many accounts
                 toast.success('Success! Your connection was successful.', {
                     position: "top-right",
                     autoClose: 5000,
@@ -39,7 +40,7 @@ const WalletCard = () => {
     };
 
     return (
-        <div className='container bg-cover' style={{backgroundImage: 'url("./BackGroundImg.jpg")'}}>
+        <div className='container bg-cover' style={{ backgroundImage: 'url("./BackGroundImg.jpg")' }}>
             <ToastContainer />
             <header className="header">
                 <h2 className="text-3xl font-bold text-gray-800 text-center mb-8 flash-effect">
@@ -64,7 +65,7 @@ const WalletCard = () => {
                     {enableButtons && (
                         <>
                             <Link href="/ProductListing" passHref className="button">
-                                Add a Product
+                                Add a Car
                             </Link>
                             <Link href="/BuyingPage" passHref className="button">
                                 Buy a Vehicle

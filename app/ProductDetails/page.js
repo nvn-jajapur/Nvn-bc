@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import { useRouter } from 'next/navigation'
+import { relative } from 'path';
 
 const ItemDetails = () => {
     const router = useRouter();
@@ -14,6 +15,11 @@ const ItemDetails = () => {
     const [buttonText, setButtonText] = useState('Buy Now');
     const [transactionId, setTransactionId] = useState('');
 
+    // Navigate to Buying Page when clicked on X while buying a Car
+    const navigateAway = () => {
+        window.location.href = `/BuyingPage`;
+    };
+    // Displaying the content of products
     const DetailsContent = () => {
         const searchParams = useSearchParams();
         const title = searchParams.get('title');
@@ -24,11 +30,27 @@ const ItemDetails = () => {
 
         return (
             <div className="max-w-lg w-full bg-white rounded-lg shadow-xl p-6 border border-gray-200">
-                <h1 className="text-3xl font-bold text-gray-800 mb-2">{title}</h1>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <h1 className="text-3xl font-bold text-gray-800 mb-2">{title}</h1>
+                    <button onClick={navigateAway} style={{
+                        fontSize: '24px',
+                        color: '#f00606',
+                        backgroundColor: 'transparent',
+                        border: 'none',
+                        cursor: 'pointer',
+                        padding: "0 10px 10px 0"
+                    }}>X</button>
+                </div>
                 <img src={`https://gateway.pinata.cloud/ipfs/${imageHash}`} alt={title} className="rounded w-full object-cover h-64 mb-4" />
-                <p className="text-gray-600 mb-4">{description}</p>
+                <p style={{
+                    fontFamily: 'Merriweather, serif',
+                    fontSize: '17px',
+                    lineHeight: '1.7',
+                    color: '#4A5568',
+                    fontWeight: '400'
+                }}>{description}</p>
                 <p className="text-xl text-indigo-600 mb-6">{price} ETH</p>
-                <button 
+                <button
                     className={`w-full py-3 text-white font-bold rounded transition duration-300 ease-in-out ${isBuying ? 'bg-gray-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-500'}`}
                     onClick={() => purchaseProduct(id, price)}
                     disabled={isBuying}>
@@ -50,7 +72,7 @@ const ItemDetails = () => {
             const contract = new ethers.Contract(contractAddress, contractABI, signer);
             const new_price = ethers.utils.parseUnits(price.toString(), "ether");
             debugger
-            const transaction = await contract.purchaseProduct(id, {value: new_price});
+            const transaction = await contract.purchaseProduct(id, { value: new_price });
             const result = await transaction.wait();
 
             setIsBuying(false);
@@ -70,7 +92,7 @@ const ItemDetails = () => {
             setButtonText('Buy Now');
             setTimeout(() => {
                 router.push('/BuyingPage');
-              }, 6000);
+            }, 6000);
         }
     };
 
