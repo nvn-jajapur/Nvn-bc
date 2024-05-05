@@ -44,6 +44,8 @@ pnpm dev
 # or
 bun dev
 ```
+## 5. ABI and ContractAddress
+Make sure to update the contractABI and contractAddress of your code from solidity in connections.js and compData.json respectively.
 ## Mechanics of project
 
 The platform enables users to showcase and acquire products in a distributed fashion. Items can be listed with pricing in USD, yet transactions are facilitated using ETH or an alternative cryptocurrency of choice. Embedded smart contracts guarantee the integrity and enforcement of transaction protocols, ensuring all dealings are secure and compliant with predetermined standards.
