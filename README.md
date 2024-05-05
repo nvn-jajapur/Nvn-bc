@@ -3,9 +3,10 @@ The AutoMobile marketplace, powered by Ethereum, revolutionizes vehicle buying a
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`my-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/1be94daa-0ac2-4182-926c-cb92af6b0c40)
+![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/03ac318c-a46d-4720-9fb3-64343565d9ac)
 
-Link for the application :
+
+Link for the application : [GITHUB_REPO](https://dappcarmarketplace.netlify.app/HomePage)
 
 Technologies uses:
 
@@ -71,11 +72,14 @@ Purchasing products on the platform is secure and user-friendly:
 
 Each of these features is designed to provide a comprehensive, secure, and enjoyable shopping experience on our platform.
 
-![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/996d87fe-e505-4c5e-84bc-56878fa298a2)
+![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/2fb3e6c8-c510-4cf8-85e2-25331d66a5c5)
 
-![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/e4774466-0aa8-4d63-893f-7522688db16d)
+![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/eb0cb01c-6af1-455c-9760-d40f043c4713)
 
-![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/1e85f133-b94b-4644-8536-b93547998dad)
+
+![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/32d06f17-78a6-4f4a-a8cc-0de901153226)
+
+
 
 
 
