@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`my-app`](ht
 ![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/03ac318c-a46d-4720-9fb3-64343565d9ac)
 
 
-Link for the application : [GITHUB_REPO](https://dappcarmarketplace.netlify.app/HomePage)
+Link for the application : [Application](https://dappcarmarketplace.netlify.app/HomePage)
 
 Technologies uses:
 
