@@ -72,8 +72,8 @@ const WalletCard = () => {
       const signer = provider.getSigner();
       const marketplaceContract = new ethers.Contract(contractAddress, contractABI, signer);
       const transaction = await marketplaceContract.listProduct(title, description, ipfsHash, ethers.utils.parseUnits(price, 'ether'));
-      await transaction.wait();
-      setSuccessMessage('Item listed successfully!');
+      const result = await transaction.wait();
+      setSuccessMessage('Product added successfully with Id:'+result.transactionHash);
       setTitle('');
       setDescription('');
       setPrice('');
@@ -81,7 +81,7 @@ const WalletCard = () => {
       if (fileInputRef.current) {
         fileInputRef.current.value = '';
       }
-      setTimeout(() => { setSuccessMessage(''); }, 3000);
+      setTimeout(() => { setSuccessMessage(''); }, 6000);
     } catch (error) {
         console.error('Error processing transaction: ', error);
         setErrorMessage('Transaction failed: ' + error.message);
@@ -90,9 +90,21 @@ const WalletCard = () => {
     }
     router.push('/BuyingPage')
 };
+const handleCancel = () => {
+  // Reset the form state if necessary
+  setTitle('');
+  setDescription('');
+  setPrice('');
+  setImage(null);
+  if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+  }
+  // Redirect to the homepage
+  router.push('/HomePage');
+};
 
   return (
-    <div className='flex items-center justify-center h-screen bg-gradient-to-r from-gray-800 to-black'>
+    <div className='flex items-center justify-center h-screen bg-gradient-to-r from-gray-800 to-black' style={{backgroundImage: 'url("./BgImg2.jpg")'}}>
         <div className='bg-white rounded-lg shadow-lg p-6 w-full max-w-lg'>
             {successMessage && (
                 <div className="success bg-green-500 text-white p-4 mb-4 text-center font-bold rounded">
@@ -125,6 +137,9 @@ const WalletCard = () => {
                     <button type="submit" disabled={isLoading} className={`shadow focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded ${isLoading ? 'bg-gray-400 hover:bg-gray-400 cursor-not-allowed' : 'bg-purple-500 hover:bg-purple-400 text-white'}`}>
                         {isLoading ? 'Processing...' : 'List Item'}
                     </button>
+                    <button type="button" onClick={handleCancel} className="ml-4 bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 rounded shadow focus:shadow-outline focus:outline-none">
+                            Cancel
+                        </button>
                 </div>
                 {errorMessage && <p className="error text-red-500 text-center mt-4">{errorMessage}</p>}
             </form>

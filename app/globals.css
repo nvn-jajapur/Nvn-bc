@@ -14,7 +14,13 @@ body, html {
   height: 100%;
   font-family: 'Arial', sans-serif;
 }
-
+@keyframes flashingText {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.flash-effect {
+  animation: flashingText 2s linear infinite;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -22,9 +28,9 @@ body, html {
   justify-content: space-between;
   
 }
-.myImage{
+/* .myImage{
   background-image: url('https://img.freepik.com/premium-psd/etherium-coin-3d-rendering_79831-574.jpg?w=740');
-}
+} */
 
 .header {
   padding: 20px;
