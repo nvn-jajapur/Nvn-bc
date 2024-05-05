@@ -97,5 +97,5 @@ If you have developed a new feature or corrected a bug and would like to share i
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 or
-You can also host your application on []Netlify](https://www.netlify.com/?qgad=669861900644&qgterm=netlify&utm_source=google&utm_term=netlify&utm_campaign=GS_Connect:+Netlify+Brand&utm_medium=paid_search&hsa_acc=3888979506&hsa_cam=20355763121&hsa_grp=154990107550&hsa_ad=669861900644&hsa_src=g&hsa_tgt=kwd-309804753741&hsa_kw=netlify&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYUc6XPKpKHk7Lrm64ylFFoLoj-ei0xmRfk8jDzVtrQLXyb-K3jbs7saAl5MEALw_wcB)
+You can also host your application on [Netlify](https://www.netlify.com/)
 
