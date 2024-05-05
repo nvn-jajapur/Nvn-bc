@@ -78,6 +78,7 @@ Each of these features is designed to provide a comprehensive, secure, and enjoy
 
 
 ![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/32d06f17-78a6-4f4a-a8cc-0de901153226)
+![image](https://github.com/nvn-jajapur/Nvn-bc/assets/165442723/06effa42-7a40-4ae0-a019-866a209c43bd)
 
 
 
