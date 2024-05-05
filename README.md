@@ -18,11 +18,11 @@ Technologies uses:
 - [EtherScan](https://etherscan.io/) - Etherscan to check transactions
 
 Before we start, make sure Node is installed on your system.
-## Commands to clone the project
+## 1. Commands to clone the project
 ```bash
 git clone https://github.com/nvn-jajapur/Nvn-bc.git
 ```
-### Commands to install required packages
+### 2. Commands to install required packages
 ```bash
 npm install
 # or npm install --force (not recommended)
@@ -31,10 +31,10 @@ npm install ethers
 npm install axios
 # or npm install axios  --force (not recommended)
 ```
-## Code in solidity
+## 3. Code in solidity
 Make sure that you hvae connected to MetaMask(or other wallet) and solidity is coding is up and running
 
-## Commands to run project
+## 4. Commands to run project
 ```bash
 npm run dev
 # or
@@ -44,6 +44,14 @@ pnpm dev
 # or
 bun dev
 ```
+## Mechanics of project
+
+The platform enables users to showcase and acquire products in a distributed fashion. Items can be listed with pricing in USD, yet transactions are facilitated using ETH or an alternative cryptocurrency of choice. Embedded smart contracts guarantee the integrity and enforcement of transaction protocols, ensuring all dealings are secure and compliant with predetermined standards.
+#### Functionalities Available
+1. Connection to Wallet
+2. Adding a product to the Market Place
+3. List of Products for sale
+4. Buying of products
 
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
